@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ClearStatus — Sharp, Full-HD WhatsApp Status Videos</title>
-<meta name="description" content="ClearStatus converts your videos into WhatsApp Status–ready clips that upload without re-compression — sharp, full-HD, and 100% on-device. Free to use.">
+<meta name="description" content="ClearStatus converts your videos into WhatsApp Status–ready clips that upload without re-compression — sharp, full-HD, and 100% on-device. Free to use: watch a short ad to clear the watermark, or go Premium to remove it everywhere.">
 <link rel="icon" type="image/png" href="assets/icon-180.png">
 <style>
   :root{
@@ -118,6 +118,20 @@
     display:inline-block;margin-top:16px;font-size:12px;font-weight:800;letter-spacing:0.03em;
     color:#1a1400;background:var(--gold);padding:6px 12px;border-radius:999px;
   }
+  .plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left}
+  .plan{
+    background:var(--panel);border:1px solid var(--border);border-radius:16px;
+    padding:26px;display:flex;flex-direction:column;
+  }
+  .plan-premium{border-color:rgba(250,191,26,0.32)}
+  .plan-tag{
+    font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--faint);margin-bottom:10px;
+  }
+  .plan-tag-gold{color:var(--gold)}
+  .plan h3{font-size:17px;margin:0 0 8px;font-weight:700}
+  .plan p{font-size:14px;color:var(--muted);margin:0;line-height:1.55;max-width:none}
+  .plan .badge-gold{align-self:flex-start;margin-top:auto}
 
   /* Privacy section */
   .privacy-box{
@@ -137,6 +151,7 @@
   @media (max-width:820px){
     .grid,.steps{grid-template-columns:1fr 1fr}
     .privacy-list{grid-template-columns:1fr}
+    .plans{grid-template-columns:1fr}
   }
   @media (max-width:600px){
     .navlinks{display:none}
@@ -157,6 +172,7 @@
     <div class="navlinks">
       <a href="#features">Features</a>
       <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
       <a href="#privacy">Privacy</a>
       <a href="#contact">Contact</a>
     </div>
@@ -248,7 +264,7 @@
           </svg>
         </div>
         <h3>Free to use</h3>
-        <p>Convert as many videos as you like, no account needed. Output includes a small watermark unless you subscribe.</p>
+        <p>Convert as many videos as you like, no account needed. Clips carry a small watermark — watch a short ad to clear any part, or subscribe to drop it everywhere.</p>
       </div>
 
       <div class="card">
@@ -295,10 +311,25 @@
 
 <section id="pricing">
   <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Pricing</div>
+      <h2>Free to convert. Two ways to lose the watermark.</h2>
+      <p>No paywall and no sign-up — every video converts for free. Clips carry a small watermark until you clear it.</p>
+    </div>
     <div class="price-card">
-      <h3>Free to convert. Subscribe to remove the watermark.</h3>
-      <p>ClearStatus is free for everyone — no paywall, no sign-up. Converted clips include a small watermark; a subscription (monthly or yearly) removes it, with a 3-day free trial.</p>
-      <span class="badge-gold">3-DAY FREE TRIAL</span>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-tag">Free</div>
+          <h3>Watch a short ad</h3>
+          <p>Tap the watermark on any part and watch a rewarded ad — that part then exports clean. Unlock as many parts as you want; the ones you skip simply keep their watermark.</p>
+        </div>
+        <div class="plan plan-premium">
+          <div class="plan-tag plan-tag-gold">Premium</div>
+          <h3>Remove it everywhere</h3>
+          <p>Every part exports watermark-free, with no ads anywhere in the app. Monthly or yearly, billed through Apple — cancel anytime.</p>
+          <span class="badge-gold">3-DAY FREE TRIAL</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -308,7 +339,7 @@
     <div class="section-head">
       <div class="eyebrow">Privacy &amp; Security</div>
       <h2>Your videos never leave your phone</h2>
-      <p>ClearStatus is built to be private by default — not as an afterthought.</p>
+      <p>ClearStatus is built to be private by default — not as an afterthought. Here's exactly what does and doesn't leave your phone.</p>
     </div>
     <div class="privacy-box">
       <ul class="privacy-list">
@@ -318,7 +349,15 @@
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>
-          <span><strong>No data collection</strong> — no analytics, no advertising identifiers, no tracking SDKs of any kind.</span>
+          <span><strong>Advertisers never see your videos.</strong> Nothing about the clip you're converting is shared with Google or anyone else.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>
+          <span><strong>Ads are non-personalized.</strong> The free version's optional rewarded ads don't profile you, and the app never asks to track you across other apps or websites.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>
+          <span><strong>Premium is fully ad-free</strong> — for subscribers the ad SDK is never even started.</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>
